@@ -3,22 +3,33 @@
   <head>
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>My Website</title>
+    <title>Weather</title>
 
     <link rel="stylesheet" href="css/foundation.css" />
+    <link rel="stylesheet" href="css/weather-icons.css" />
     <link rel="stylesheet" href="css/styles.css" />
-
     
     <script src="js/vendor/modernizr.js"></script>
   </head>
   <body>
     
-   <div id="weather"></div>
+    <div class="row">
 
-    
+      <form id="getWeather">
+        <input type="text" />
+        <button>Weather</button>
+      </form>
+      
+      <ul>
+        <li class="temp"> </li>
+        <li class="city"> </li>
+        <li class="currently"> </li>
+      </ul> 
+    </div> <!-- end .row -->
+     
     <script src="js/vendor/jquery.js"></script>
     <script src="js/foundation.min.js"></script>
-    <script src="js/jquery.simpleWeather.js"></script>
+    <script src="js/weather.js"></script>
     <script src="js/scripts.js"></script>
 
   </body>

@@ -4,25 +4,42 @@ $(document).foundation();
 // Your Awesome Scripts!
 $(document).ready(function(){
 
-
-  $.simpleWeather({
-    location: 'Austin, TX',
-    woeid: '',
-    unit: 'f',
-    success: function(weather) {
-      html = '<h2><i class="icon-'+weather.code+'"></i> '+weather.temp+'&deg;'+weather.units.temp+'</h2>';
-      html += '<ul><li>'+weather.city+', '+weather.region+'</li>';
-      html += '<li class="currently">'+weather.currently+'</li>';
-      html += '<li>'+weather.wind.direction+' '+weather.wind.speed+' '+weather.units.speed+'</li></ul>';
+  // On click button, get zip, then run Simple Weather
+$('#getWeather button').on('click', function() {
   
-      $("#weather").html(html);
+  // 1. Get & store entered zipcode
+  var zipcode = $('#getWeather input').val();
+  
+  // 2. Pass weather into _simpleWeather()_ object
+  $.simpleWeather({
+    
+    location: zipcode,
+  
+    success: function(weather) {
+      
+      // Get & store temperature
+      var temp = weather.temp;
+      // Get & store city
+      var city = weather.city;
+      
+      // Output to hooks in HTML
+      $('.temp').text(temp);
+      $('.city').text(city);
+      $('.currently').text(currently);
+
+      // See console for all properties of object
+      console.log(weather);
     },
+  
     error: function(error) {
-      $("#weather").html('<p>'+error+'</p>');
+      $('body').html('<p>' + error + '</p>');
     }
-
+  
+  });
+  
+  // 3. Reset input value
+  $('#getWeather input').val('');
+  
 });
-
-	// console.log('Page Loaded. Lets Do this!');
 
 }); 
