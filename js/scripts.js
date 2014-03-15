@@ -5,43 +5,33 @@ $(document).foundation();
 $(document).ready(function(){
 
   // On click button, get zip, then run Simple Weather
-$('#getWeather button').on('click', function() {
-  
-  // 1. Get & store entered zipcode
-  var zipcode = $('#getWeather input').val();
-  
-  // 2. Pass weather into _simpleWeather()_ object
+ // 2. _simpleWeather()_ object
   $.simpleWeather({
     
-    location: zipcode,
-  
+    location: '99004', // change zip
+    unit: 'f',
+    
+    // Get _weather_ object
     success: function(weather) {
       
       // Get & store temperature
       var temp = weather.temp;
       // Get & store city
       var city = weather.city;
-      // Get & store current conditions
-      var currently = weather.currently;
       
       // Output to hooks in HTML
       $('.temp').text(temp);
       $('.city').text(city);
-      $('.currently').text(currently);
-
-      // See console for all properties of object
+      
+      // See console for _weather_ object
       console.log(weather);
     },
   
-    error: function(error) {
+    // if error
+    error: function(error) {  
       $('body').html('<p>' + error + '</p>');
     }
   
   });
-  
-  // 3. Reset input value
-  $('#getWeather input').val('');
-  
-});
 
 }); 
