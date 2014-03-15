@@ -38,7 +38,7 @@ $(document).ready(function(){
     success: function(weather) {
       
       // Get & store temperature
-      var temp = weather.temp;
+      var temp = weather.temp, weather.image;
       // Get & store city
       var city = weather.city;
       // Get & store current conditions via text
