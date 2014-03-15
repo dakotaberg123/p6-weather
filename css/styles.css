@@ -9,7 +9,7 @@ li {
 	display: inline;
 	margin: 0;
 	padding: 0;
-	color: rgba(30, 100, 170, 1);
+	color: rgba(7, 205, 250, 1);
 }
 
 .getGeolocation {
@@ -24,5 +24,11 @@ li {
 
 .getGeolocation:hover {
 	background: white;
-	color: rgba(30, 100, 170, 1);
+	color: rgba(7, 205, 250, 1);
+}
+
+.getGeolocation:active {
+	border: none;
+	background: white;
+	color: black;
 }
