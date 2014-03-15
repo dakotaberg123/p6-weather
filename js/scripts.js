@@ -18,10 +18,13 @@ $(document).ready(function(){
       var temp = weather.temp;
       // Get & store city
       var city = weather.city;
+      // Get & store current condition
+      var currently = weather.currently;
       
       // Output to hooks in HTML
       $('.temp').text(temp);
       $('.city').text(city);
+      $('.currently').text(currently);
       
       // See console for _weather_ object
       console.log(weather);
