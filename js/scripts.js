@@ -38,18 +38,18 @@ $(document).ready(function(){
     success: function(weather) {
       
       // Get & store temperature
-      var temp = weather.temp;
+      var temp = weather.units.temp;
       // Get & store city
       var city = weather.city;
       // Get & store current conditions via text
       var currently = weather.currently;
       // Get & store high temp
-      var high = weather.high;
+      var high = weather.units.high;
       // Get & store low temp
-      var low = weather.low;
+      var low = weather.units.low;
       
       // Output to hooks in HTML
-      $('.temp').text(temp + f);
+      $('.temp').text(temp);
       $('.city').text(city);
       $('.currently').text(currently);
       $('.high').text(high);
