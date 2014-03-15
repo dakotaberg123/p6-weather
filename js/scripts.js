@@ -49,7 +49,7 @@ $(document).ready(function(){
       var low = weather.low;
       
       // Output to hooks in HTML
-      $('.temp').text(temp);
+      $('.temp').text(temp + f);
       $('.city').text(city);
       $('.currently').text(currently);
       $('.high').text(high);
