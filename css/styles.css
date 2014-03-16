@@ -19,7 +19,7 @@ li {
 	border-radius: 3px;
 	font: helvetica, sans-serif;
 	font-size: 11px;
-	margin: 30px auto;
+	margin: 10px 5px 30px 200px;
 }
 
 .getGeolocation:hover {
