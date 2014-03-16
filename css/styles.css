@@ -6,7 +6,7 @@ body {
 
 li {
 	list-style: none;
-	display: inline;
+	display: inline-block;
 	margin: 0;
 	padding: 0;
 	color: rgba(7, 205, 250, 1);
@@ -81,7 +81,7 @@ li {
 }
 
 ul {
-	width: 100%;
+	text-align: center;
 }
 
 
