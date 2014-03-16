@@ -38,7 +38,7 @@ $(document).ready(function(){
       var currently = weather.currently;
       var sunrise = 'Sunrise ' + weather.sunrise;
       var high = 'High <br>' + weather.high;
-      var low = 'Low ' + <br> + weather.low;
+      var low = 'Low ' + weather.low;
       var sunset = 'Sunset ' + weather.sunset;
       
       $('.code').text(code);
