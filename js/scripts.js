@@ -54,12 +54,12 @@ $(document).ready(function(){
       // See console for _weather_ object
       console.log(weather);
     }
-
-  });
-
-    if(.code == 26) {
+ if(.code == 26) {
       $("body").css("background", "green");
     }
+  });
+
+   
     
   }; // end of _loadWeather()_ function
 
