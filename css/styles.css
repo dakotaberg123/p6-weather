@@ -67,6 +67,7 @@ li {
 .sunset {
 	font-size: 15px;
 	color: rgba(7, 205, 250, 1);
+	height: 50px;
 }
 
 .sunrise,

@@ -36,10 +36,10 @@ $(document).ready(function(){
       var temp = weather.temp + weather.units.temp;
       var city = weather.city + ', ' + weather.region;
       var currently = weather.currently;
-      var sunrise = 'Sunrise' + weather.sunrise;
-      var high = 'High' + weather.high;
-      var low = 'Low' + weather.low;
-      var sunset = 'Sunset' + weather.sunset;
+      var sunrise = 'Sunrise ' + weather.sunrise;
+      var high = 'High ' + weather.high;
+      var low = 'Low ' + weather.low;
+      var sunset = 'Sunset ' + weather.sunset;
       
       $('.code').text(code);
       $('.temp').text(temp);
