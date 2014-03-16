@@ -38,7 +38,9 @@ $(document).ready(function(){
     success: function(weather) {
       
       // Get & store temperature
-      var temp = weather.temp.image;
+      var temp = weather.temp;
+      // Get & store code
+      var code = weather.code;
       // Get & store city
       var city = weather.city;
       // Get & store current conditions via text
@@ -50,6 +52,7 @@ $(document).ready(function(){
       
       // Output to hooks in HTML
       $('.temp').text(temp);
+      $('.code').text(code);
       $('.city').text(city);
       $('.currently').text(currently);
       $('.high').text(high);
