@@ -71,13 +71,14 @@ li {
 table {
 	width: 100%;
 	height: 60px;
-	position: fixed;
+	position: absolute;
 	bottom: 0;
+	border: 2px solid rgba(7, 205, 250, 1);
 }
 
 tbody {
 	background: black;
-	border: 2px solid rgba(7, 205, 250, 1);
+	
 }
 
 
