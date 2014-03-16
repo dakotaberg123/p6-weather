@@ -13,13 +13,14 @@ li {
 }
 
 .getGeolocation {
-	width: 150px;
+	width: 100px;
 	background: white;
 	color: black;
 	border-radius: 3px;
 	font: helvetica, sans-serif;
 	font-size: 11px;
-	margin: 10px 5px 30px 200px;
+	margin: 10px 5px 30px 230px;
+	padding: 0px;
 }
 
 .getGeolocation:hover {
