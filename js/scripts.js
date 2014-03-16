@@ -50,7 +50,6 @@ $(document).ready(function(){
       
       // Output to hooks in HTML
       $('.temp').text(temp);
-      $('.code').text(code);
       $('.city').text(city);
       $('.currently').text(currently);
       $('.high').text(high);
