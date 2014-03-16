@@ -71,16 +71,19 @@ li {
 
 table {
 	width: 100%;
-	height: 60px;
 	position: fixed;
 	bottom: 0;
+	border: 10px solid black;
 }
 
 tbody {
 	background: black;
 }
 
-
+td {
+	border: 1px solid white;
+	height: 70px;
+}
 
 
 
