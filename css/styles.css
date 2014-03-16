@@ -36,6 +36,10 @@ li {
 	border: 5px solid rgba(7, 205, 250, 1);
 }
 
+.getGeolocation:visited {
+	color: rgba(7, 205, 250, 1);
+}
+
 .city,
 .temp,
 .currently,
