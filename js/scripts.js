@@ -37,8 +37,8 @@ $(document).ready(function(){
       var city = weather.city + ', ' + weather.region;
       var currently = weather.currently;
       var sunrise = 'Sunrise ' + weather.sunrise;
-      var high = 'High <br>' + weather.high;
-      var low = 'Low ' + weather.low;
+      var high = 'High    ' + weather.high;
+      var low = 'Low    ' + weather.low;
       var sunset = 'Sunset ' + weather.sunset;
       
       $('.code').text(code);
