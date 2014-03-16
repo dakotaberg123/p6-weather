@@ -69,22 +69,11 @@ li {
 	color: rgba(7, 205, 250, 1);
 }
 
-table {
-	width: 100%;
-	position: fixed;
-	bottom: 0;
-	border: 10px solid black;
+.sunrise,
+.high,
+.low {
+	border-right: 1px solid white;
 }
-
-tbody {
-	background: black;
-}
-
-td {
-	border: 1px solid white;
-	height: 70px;
-}
-
 
 
 
