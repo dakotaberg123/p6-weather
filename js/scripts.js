@@ -37,23 +37,21 @@ $(document).ready(function(){
     // Get _weather_ object
     success: function(weather) {
       
-      // Get & store temperature
       var temp = weather.temp;
-      // Get & store city
       var city = weather.city;
-      // Get & store current conditions via text
       var currently = weather.currently;
-      // Get & store high temp
+      var sunrise = weather.sunrise;
       var high = weather.high;
-      // Get & store low temp
       var low = weather.low;
+      var sunset = weather.sunset;
       
-      // Output to hooks in HTML
       $('.temp').text(temp);
       $('.city').text(city);
       $('.currently').text(currently);
+      $('.sunrise').text(sunrise);
       $('.high').text(high);
       $('.low').text(low);
+      $('.sunset').text(sunset);
 
       
       // See console for _weather_ object
