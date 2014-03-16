@@ -13,25 +13,27 @@ li {
 }
 
 .getGeolocation {
-	width: 60px;
+	width: 80px;
+	height: 80px;
 	background: white;
-	color: black;
-	border-radius: 3px;
+	color: rgba(7, 205, 250, 1);
+	border-radius: 80px;
+	border: 5px solid rgba(7, 205, 250, 1);
 	font: helvetica, sans-serif;
-	font-size: 11px;
-	margin: 0 0 0 290px;
+	font-size: 16px;
+	margin: 10px 0 0 40%;
 	padding: 10px 0px;
+	line-height: 15px;
 }
 
 .getGeolocation:hover {
 	background: white;
-	color: rgba(7, 205, 250, 1);
+	color: rgba(7, 205, 250, .5);
 }
 
 .getGeolocation:focus {
-	border: none;
 	background: white;
-	color: black;
+	border: 5px solid rgba(7, 205, 250, 1);
 }
 
 .city,
