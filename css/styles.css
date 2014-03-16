@@ -34,10 +34,42 @@ li {
 	color: black;
 }
 
-.city {
+.city,
+.temp,
+.currently,
+.sunrise,
+.high,
+.low,
+.sunset {
 	color: white;
 	font: helvetica, sans-serif;
+}
+
+.city,
+.currently,
+.sunrise,
+.high,
+.low,
+.sunset {
 	font-size: 12px;
 }
+
+.temp {
+	font-size: 40px;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
