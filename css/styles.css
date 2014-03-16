@@ -55,7 +55,8 @@ li {
 .city,
 .currently {
 	font-size: 14px;
-	padding: 0 150px;
+	width: 100%;
+	padding: 0 auto;
 }
 
 .temp {
