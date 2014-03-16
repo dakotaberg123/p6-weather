@@ -35,7 +35,9 @@ li {
 }
 
 .city {
-	
+	color: white;
+	font: helvetica, sans-serif;
+	font-size: 12px;
 }
 
 

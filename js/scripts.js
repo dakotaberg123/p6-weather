@@ -38,7 +38,7 @@ $(document).ready(function(){
     success: function(weather) {
       
       var temp = weather.temp + weather.units.temp;
-      var city = weather.city;
+      var city = weather.city + weather.region;
       var currently = weather.currently;
       var sunrise = weather.sunrise;
       var high = weather.high;
