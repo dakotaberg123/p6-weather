@@ -76,13 +76,13 @@ li {
 	border-right: 1px solid rgba(7, 205, 250, 1);
 }
 
-.city,
-.temp,
-.currently {
-	padding: 10px 37% 30px 37%;
+.city {
+	margin: 0 auto;
 }
 
-
+ul {
+	width: 100%;
+}
 
 
 
