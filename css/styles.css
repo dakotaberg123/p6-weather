@@ -28,7 +28,7 @@ li {
 	color: rgba(7, 205, 250, 1);
 }
 
-.getGeolocation:focus {
+.getGeolocation:visited {
 	border: none;
 	background: white;
 	color: black;
