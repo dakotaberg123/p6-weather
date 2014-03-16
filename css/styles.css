@@ -46,11 +46,7 @@ li {
 }
 
 .city,
-.currently,
-.sunrise,
-.high,
-.low,
-.sunset {
+.currently {
 	font-size: 12px;
 }
 
@@ -62,7 +58,7 @@ li {
 .high,
 .low,
 .sunset {
-	width: 100px;
+	font-size: 20px;
 }
 
 
