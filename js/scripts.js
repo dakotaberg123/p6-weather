@@ -1,18 +1,13 @@
-// Make Foundation Go!
+
 $(document).foundation();
 
-// Your Awesome Scripts!
 $(document).ready(function(){
 
 
   // 1. Check for Geolocation
-  // REF: http://codepen.io/fleeting/pen/Idsaj
-  // Browser support geolocation?  
   if (navigator.geolocation) {
-    // Yes! Show button
     $('.getGeolocation').show(); 
   } else {
-    // No. Hide button
     $('.getGeolocation').hide();
   }
 
@@ -62,7 +57,7 @@ $(document).ready(function(){
 
   });
 
-    if(weather.code == 26) {
+    if(.code == 26) {
       $("body").css("background", "green");
     }
     
