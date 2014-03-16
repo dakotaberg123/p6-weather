@@ -59,16 +59,14 @@ $(document).ready(function(){
       // See console for _weather_ object
       console.log(weather);
     }
-  
-    if(code == 26) {
-    $("body").css("background", "red");
-  }
-  
+
   });
 
 
     
   }; // end of _loadWeather()_ function
 
-
+if(code == 26) {
+    $("body").css("background", "red");
+  }
 }); 
