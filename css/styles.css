@@ -58,7 +58,12 @@ li {
 	font-size: 60px;
 }
 
-
+.sunrise,
+.high,
+.low,
+.sunset {
+	width: 25%;
+}
 
 
 
