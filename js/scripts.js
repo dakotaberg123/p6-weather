@@ -33,7 +33,7 @@ $(document).ready(function(){
     success: function(weather) {
       
       var code = weather.code;
-      var temp = weather.temp + &deg; + weather.units.temp;
+      var temp = weather.temp + '&deg; ' + weather.units.temp;
       var city = weather.city + ', ' + weather.region;
       var currently = weather.currently;
       var sunrise = 'Sunrise ' + weather.sunrise;
@@ -42,7 +42,7 @@ $(document).ready(function(){
       var sunset = 'Sunset ' + weather.sunset;
       
       $('.code').text(code);
-      $('.temp').text(temp);
+      $('.temp').html(temp);
       $('.city').text(city);
       $('.currently').text(currently);
       $('.sunrise').text(sunrise);
