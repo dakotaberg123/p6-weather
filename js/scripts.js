@@ -37,6 +37,7 @@ $(document).ready(function(){
     // Get _weather_ object
     success: function(weather) {
       
+      var code = weather.code;
       var temp = weather.temp + weather.units.temp;
       var city = weather.city + ', ' + weather.region;
       var currently = weather.currently;
@@ -45,6 +46,7 @@ $(document).ready(function(){
       var low = weather.low;
       var sunset = weather.sunset;
       
+      $('.code').text(code);
       $('.temp').text(temp);
       $('.city').text(city);
       $('.currently').text(currently);
