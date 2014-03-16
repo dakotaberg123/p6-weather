@@ -10,6 +10,7 @@ li {
 	margin: 0;
 	padding: 0;
 	color: rgba(7, 205, 250, 1);
+	text-align: center;
 }
 
 .getGeolocation {
