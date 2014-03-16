@@ -61,6 +61,10 @@ $(document).ready(function(){
     }
   
   });
+
+  if(code == 26) {
+    $("body").css("background", "red");
+  }
     
   }; // end of _loadWeather()_ function
 
