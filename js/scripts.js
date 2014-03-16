@@ -32,7 +32,7 @@ $(document).ready(function(){
     // Get _weather_ object
     success: function(weather) {
       
-      var code = '<i class=icon-' + weather.code + '></i>';
+      var code = <i class=icon- + weather.code + ></i>;
       var temp = weather.temp + '&deg;' + weather.units.temp;
       var city = weather.city + ', ' + weather.region;
       var currently = weather.currently;
