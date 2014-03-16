@@ -60,11 +60,13 @@ $(document).ready(function(){
       console.log(weather);
     }
   
-  });
-
-  if(code == 26) {
+    if(code == 26) {
     $("body").css("background", "red");
   }
+  
+  });
+
+
     
   }; // end of _loadWeather()_ function
 
