@@ -15,10 +15,10 @@ li {
 .getGeolocation {
 	width: 80px;
 	height: 80px;
-	background: white;
+	background: black;
 	color: rgba(7, 205, 250, 1);
 	border-radius: 80px;
-	border: 5px solid rgba(7, 205, 250, 1);
+	border: 3px solid rgba(7, 205, 250, 1);
 	font: helvetica, sans-serif;
 	font-size: 16px;
 	margin: 10px 0 0 40%;
@@ -27,13 +27,12 @@ li {
 }
 
 .getGeolocation:hover {
-	background: white;
-	color: rgba(7, 205, 250, .5);
+	background: black;
+	color: white;
 }
 
 .getGeolocation:focus {
-	background: white;
-	border: 5px solid rgba(7, 205, 250, 1);
+	background: black;
 }
 
 .getGeolocation:visited,
@@ -74,7 +73,7 @@ li {
 .sunrise,
 .high,
 .low {
-	border-right: 1px solid white;
+	border-right: 1px solid rgba(7, 205, 250, 1);
 }
 
 
