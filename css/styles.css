@@ -36,7 +36,8 @@ li {
 	border: 5px solid rgba(7, 205, 250, 1);
 }
 
-.getGeolocation:visited {
+.getGeolocation:visited,
+.getGeolocation:active {
 	color: rgba(7, 205, 250, 1);
 }
 
