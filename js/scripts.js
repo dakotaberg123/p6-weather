@@ -60,7 +60,5 @@ $(document).ready(function(){
    
     
   }; // end of _loadWeather()_ function
- if(.code == 26) {
-      $("body").css("background", "green");
-    }
+
 }); 
