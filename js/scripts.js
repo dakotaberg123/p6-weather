@@ -3,7 +3,6 @@ $(document).foundation();
 
 $(document).ready(function(){
 
-
   // 1. Check for Geolocation
   if (navigator.geolocation) {
     $('.getGeolocation').show(); 
@@ -36,7 +35,7 @@ $(document).ready(function(){
       var temp = weather.temp + '&deg;' + weather.units.temp;
       var city = weather.city + ', ' + weather.region;
       var currently = weather.currently;
-      var sunrise = 'Sunrise ' + weather.sunrise;
+      var sunrise = '\f051 ' + weather.sunrise;
       var high = 'High ' + weather.high;
       var low = 'Low ' + weather.low;
       var sunset = 'Sunset ' + weather.sunset;
