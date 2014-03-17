@@ -35,7 +35,7 @@ $(document).ready(function(){
       var temp = weather.temp + '&deg;' + weather.units.temp;
       var city = weather.city + ', ' + weather.region;
       var currently = weather.currently;
-      var sunrise = '\f051 ' + weather.sunrise;
+      var sunrise = "\f051" + weather.sunrise;
       var high = 'High ' + weather.high;
       var low = 'Low ' + weather.low;
       var sunset = 'Sunset ' + weather.sunset;
@@ -56,8 +56,53 @@ $(document).ready(function(){
 
   });
 
-   
+   $('#getWeather button').on('click', function() {
+  
+  // 1. Get & store entered zipcode
+  var zipcode = $('#getWeather input').val();
+  
+  // 2. Pass weather into _simpleWeather()_ object
+  $.simpleWeather({
     
-  }; // end of _loadWeather()_ function
+    location: zipcode,
+  
+    success: function(weather) {
+      
+      var code = weather.code;
+      var temp = weather.temp + '&deg;' + weather.units.temp;
+      var city = weather.city + ', ' + weather.region;
+      var currently = weather.currently;
+      var sunrise = "\f051" + weather.sunrise;
+      var high = 'High ' + weather.high;
+      var low = 'Low ' + weather.low;
+      var sunset = 'Sunset ' + weather.sunset;
+      
+      // Output to hooks in HTML
+      $('.code').text(code);
+      $('.temp').html(temp);
+      $('.city').text(city);
+      $('.currently').text(currently);
+      $('.sunrise').text(sunrise);
+      $('.high').text(high);
+      $('.low').text(low);
+      $('.sunset').text(sunset);
+
+      // See console for all properties of object
+      console.log(weather);
+    },
+  
+    error: function(error) {
+      $('body').html('<p>' + error + '</p>');
+    }
+  
+  });
+  
+  // 3. Reset input value
+  $('#getWeather input').val('');
+  
+});
+
+    
+}; // end of _loadWeather()_ function
 
 }); 
