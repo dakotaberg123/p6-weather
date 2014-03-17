@@ -76,6 +76,10 @@ li {
 	border-right: 1px solid rgba(7, 205, 250, 1);
 }
 
+.currently {
+	border-top: 1px solid rgba(7, 205, 250, 1);
+	border-bottom: 1px solid rgba(7, 205, 250, 1);
+}
 
 ul {
 	text-align: center;
