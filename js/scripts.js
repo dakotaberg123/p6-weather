@@ -31,7 +31,7 @@ $(document).ready(function(){
     // Get _weather_ object
     success: function(weather) {
       
-      var code = thumbnail + weather.code;
+      var code = weather.thumbnail + weather.code;
       var temp = weather.temp + '&deg;' + weather.units.temp;
       var city = weather.city + ', ' + weather.region;
       var currently = weather.currently;
