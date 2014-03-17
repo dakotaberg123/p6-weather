@@ -82,7 +82,10 @@ ul {
 
 .code {
 	width: 180px;
-	margin: 0 0 0 60px;
+}
+
+img {
+	margin: 0 0 0 25px;
 }
 
 
