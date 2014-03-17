@@ -68,24 +68,14 @@ $(document).ready(function(){
   
     success: function(weather) {
       
-      var code = weather.code;
-      var temp = weather.temp + '&deg;' + weather.units.temp;
-      var city = weather.city + ', ' + weather.region;
-      var currently = weather.currently;
-      var sunrise = "\f051" + weather.sunrise;
-      var high = 'High ' + weather.high;
-      var low = 'Low ' + weather.low;
-      var sunset = 'Sunset ' + weather.sunset;
+      // Get & store temperature
+      var temp = weather.temp;
+      // Get & store city
+      var city = weather.city;
       
       // Output to hooks in HTML
-      $('.code').text(code);
-      $('.temp').html(temp);
+      $('.temp').text(temp);
       $('.city').text(city);
-      $('.currently').text(currently);
-      $('.sunrise').text(sunrise);
-      $('.high').text(high);
-      $('.low').text(low);
-      $('.sunset').text(sunset);
 
       // See console for all properties of object
       console.log(weather);
@@ -97,7 +87,10 @@ $(document).ready(function(){
   
   });
   
+  // 3. Reset input value
+  $('#getWeather input').val('');
   
+});
 
     
 }; // end of _loadWeather()_ function
