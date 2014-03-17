@@ -87,8 +87,7 @@ $(document).ready(function(){
   
   });
   
-  // 3. Reset input value
-  $('#getWeather input').val('');
+ 
   
 });
 
