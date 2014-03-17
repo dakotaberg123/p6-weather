@@ -97,10 +97,7 @@ $(document).ready(function(){
   
   });
   
-  // 3. Reset input value
-  $('#getWeather input').val('');
   
-});
 
     
 }; // end of _loadWeather()_ function
