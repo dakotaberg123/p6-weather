@@ -34,7 +34,6 @@ $(document).ready(function(){
       var code = '<img src=' + weather.image + '>';
       var temp = weather.temp + '&deg;' + weather.units.temp;
       var city = weather.city + ', ' + weather.region;
-      var currently = weather.currently;
       var sunrise = 'Sunrise ' + weather.sunrise;
       var high = 'High ' + weather.high;
       var low = 'Low ' + weather.low;
@@ -43,7 +42,6 @@ $(document).ready(function(){
       $('.code').html(code);
       $('.temp').html(temp);
       $('.city').text(city);
-      $('.currently').text(currently);
       $('.sunrise').text(sunrise);
       $('.high').text(high);
       $('.low').text(low);
