@@ -34,7 +34,7 @@ li {
 	border: 3px solid rgba(7, 205, 250, 1);
 	font: helvetica, sans-serif;
 	font-size: 16px;
-	margin: 10px 0 40px 42%;
+	margin: 0px 0 40px 42%;
 	padding: 0px;
 	line-height: 15px;
 }
@@ -100,5 +100,8 @@ ul {
 	padding: 0 0 0 60px;
 }
 
-
+.input {
+	background: darkgrey;
+	color: rgba(7, 205, 250, 1);
+}
 
