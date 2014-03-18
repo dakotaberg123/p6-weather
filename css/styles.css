@@ -12,7 +12,8 @@ li {
 	color: rgba(7, 205, 250, 1);
 }
 
-.getGeolocation {
+.getGeolocation,
+.getWeather {
 	width: 80px;
 	height: 80px;
 	background: black;
@@ -26,17 +27,21 @@ li {
 	line-height: 15px;
 }
 
-.getGeolocation:hover {
+.getGeolocation:hover,
+.getWeather:hover {
 	background: black;
 	color: white;
 }
 
-.getGeolocation:focus {
+.getGeolocation:focus,
+.getWeather:focus {
 	background: black;
 }
 
 .getGeolocation:visited,
-.getGeolocation:active {
+.getGeolocation:active,
+.getWeather:visited,
+.getWeather:active {
 	color: rgba(7, 205, 250, 1);
 }
 
