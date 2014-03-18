@@ -12,13 +12,25 @@ li {
 	color: rgba(7, 205, 250, 1);
 }
 
-.getGeolocation,
-.getWeather {
+.getGeolocation {
 	width: 80px;
 	height: 80px;
 	background: black;
 	color: rgba(7, 205, 250, 1);
 	border-radius: 80px;
+	border: 3px solid rgba(7, 205, 250, 1);
+	font: helvetica, sans-serif;
+	font-size: 16px;
+	margin: 10px 0 40px 42%;
+	padding: 10px 0px;
+	line-height: 15px;
+}
+
+.getWeather {
+	width: 80px;
+	height: 40px;
+	background: black;
+	color: rgba(7, 205, 250, 1);
 	border: 3px solid rgba(7, 205, 250, 1);
 	font: helvetica, sans-serif;
 	font-size: 16px;
