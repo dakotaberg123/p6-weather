@@ -67,6 +67,8 @@ $(document).ready(function(){
   // 1. Get & store entered zipcode
   var zipcode = $('#getWeather').val();
   document.write(zipcode);
+
+  zipcode = "98629";
   
   // 2. Pass weather into _simpleWeather()_ object
   $.simpleWeather({
