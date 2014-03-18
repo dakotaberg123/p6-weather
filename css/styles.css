@@ -82,6 +82,11 @@ li {
 	border-right: 1px solid white;
 }
 
+.sunrise,
+.sunset {
+	line-height: 13px;
+}
+
 .high,
 .low {
 	font-size: 20px;
