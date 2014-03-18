@@ -12,7 +12,7 @@ $(document).ready(function(){
 
   $.simpleWeather({
     
-    location: '99004', // change zip
+    location: '10007', // change zip
     unit: 'f',
     
     // Get _weather_ object
