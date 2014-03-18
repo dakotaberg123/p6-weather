@@ -61,8 +61,7 @@ $(document).ready(function(){
 // REF: http://simpleweatherjs.com/
 
 // On click button, get zip, then run Simple Weather
-// $('.getWeather').on('click', function() {
-  function testclick() {
+$('.getWeather').on('click', function() {
   
   // 1. Get & store entered zipcode
   var zipcode = $('#getWeather').val();
