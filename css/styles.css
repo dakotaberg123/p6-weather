@@ -12,7 +12,7 @@ li {
 	color: rgba(7, 205, 250, 1);
 }
 
-.getGeolocation {
+.getWeather {
 	width: 80px;
 	height: 80px;
 	background: black;
@@ -26,32 +26,16 @@ li {
 	line-height: 15px;
 }
 
-.getWeather {
-	width: 80px;
-	height: 40px;
-	background: black;
-	color: rgba(7, 205, 250, 1);
-	border: 3px solid rgba(7, 205, 250, 1);
-	font: helvetica, sans-serif;
-	font-size: 16px;
-	margin: 0px 0 40px 42%;
-	padding: 0px;
-	line-height: 15px;
-}
 
-.getGeolocation:hover,
 .getWeather:hover {
 	background: black;
 	color: white;
 }
 
-.getGeolocation:focus,
 .getWeather:focus {
 	background: black;
 }
 
-.getGeolocation:visited,
-.getGeolocation:active,
 .getWeather:visited,
 .getWeather:active {
 	color: rgba(7, 205, 250, 1);
@@ -99,4 +83,24 @@ ul {
 	width: 300px;
 	padding: 0 0 0 60px;
 }
+
+#getWeather {
+	text-align: center;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
