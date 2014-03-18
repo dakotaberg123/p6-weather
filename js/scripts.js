@@ -11,22 +11,23 @@ $(document).foundation();
   
     success: function(weather) {
       
-      var code = '<img src=' + weather.image + '>';
+      //var code = '<img src=' + weather.image + '>';
+      var code = '<h2><i class="icon-' + weather.code + '"></i></h2>';
       var temp = weather.temp + '&deg;' + weather.units.temp;
       var city = weather.city + ', ' + weather.region;
-      var sunrise = 'Sunrise ' + weather.sunrise;
-      var high = '&#8593; ' + weather.high + '&deg;' + weather.units.temp;
-      var low = '&#8595; ' + weather.low  + '&deg;' + weather.units.temp;
-      var sunset = 'Sunset ' + weather.sunset;
+      var sunrise = '<i class="icon-36 smallicon"></i>' + '<br>' + weather.sunrise;
+      var high = '<span class="icontext">&#x2191;</span>' + ' ' + weather.high + '&deg;' + weather.units.temp;
+      var low = '<span class="icontext">&#x2193;</span>' + ' ' + weather.low  + '&deg;' + weather.units.temp;
+      var sunset = '<i class="icon-31 smallicon"></i>' + '<br>' + weather.sunset;
       var currently = weather.currently;
       
       $('.code').html(code);
       $('.temp').html(temp);
       $('.city').text(city);
-      $('.sunrise').text(sunrise);
+      $('.sunrise').html(sunrise);
       $('.high').html(high);
       $('.low').html(low);
-      $('.sunset').text(sunset);
+      $('.sunset').html(sunset);
       $('.currently').text(currently);
 
 
@@ -42,6 +43,42 @@ $(document).foundation();
   $('#getWeather').val('');
   
 });
+
+
+
+
+
+  $('.black').on('click', function() {
+    $('body').addClass('black').removeClass('blue red green yellow purple orange pink');
+  });
+  
+  $('.blue').on('click', function() {
+    $('body').addClass('blue').removeClass('black red green yellow purple orange pink');
+  });
+
+  $('.red').on('click', function() {
+    $('body').addClass('red').removeClass('black blue green yellow purple orange pink');
+  });
+  
+  $('.green').on('click', function() {
+    $('body').addClass('green').removeClass('black blue red yellow purple orange pink');
+  });
+
+  $('.yellow').on('click', function() {
+    $('body').addClass('yellow').removeClass('black blue red green purple orange pink');
+  });
+  
+  $('.purple').on('click', function() {
+    $('body').addClass('purple').removeClass('black blue red green yellow orange pink');
+  });
+
+  $('.orange').on('click', function() {
+    $('body').addClass('orange').removeClass('black blue red green yellow purple pink');
+  });
+  
+  $('.pink').on('click', function() {
+    $('body').addClass('pink').removeClass('black blue red green yellow purple orange');
+  });
 
 
 

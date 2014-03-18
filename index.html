@@ -6,20 +6,33 @@
     <title>Weather</title>
 
     <link rel="stylesheet" href="css/foundation.css" />
-    <link rel="stylesheet" href="css/weather-icons.css" />
+    <link rel="stylesheet" href="css/weather.icons.css" />
     <link rel="stylesheet" href="css/styles.css" />
+
     
     <script src="js/vendor/modernizr.js"></script>
   </head>
   <body>
 
-    
-  <div class="row buttonparent">
+  <div class="boxwrap">
+   
+    <div class="black box"></div>
+    <div class="blue box"></div>
+    <div class="red box"></div> 
+    <div class="green box"></div> 
+    <div class="yellow box"></div> 
+    <div class="purple box"></div>  
+    <div class="orange box"></div>  
+    <div class="pink box"></div>   
+     <h5>Customize your weather</h5>
+  </div>
+
+  <div class="buttonparent">
     <button class="getWeather">Get Weather</button>
   </div>
   <input type="text" id="getWeather" placeholder="Where are you?"/>
 
-    <div class="row">
+    <div>
       <ul>
         <li class="city small-12 columns"> </li>
         <li class="code small-12 small-centered columns"> </li>
@@ -28,13 +41,13 @@
       </ul>
     </div>
     
-<div class="row">
+<div>
 
     <ul>
-      <li class="sunrise small-3 columns"> </li>
-      <li class="high small-3 columns"> </li>
-      <li class="low small-3 columns"> </li>
-      <li class="sunset small-3 columns"> </li>
+      <li class="sunrise small-3 columns"><i class="icon-36 smallicon"></i></li>
+      <li class="high small-3 columns"><span class="icontext">&#x2191;</span></li>
+      <li class="low small-3 columns"><span class="icontext">&#x2193;</span></li>
+      <li class="sunset small-3 columns"><i class="icon-31 smallicon"></i></li>
     </ul>
  
 </div>
