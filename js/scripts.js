@@ -1,6 +1,8 @@
 
 $(document).foundation();
 
+$(document).ready(function(){
+
 $.simpleWeather({
     
     location: '99004', // change zip
@@ -30,6 +32,7 @@ $.simpleWeather({
   });
 
 
+)};
 
 $('.getWeather').on('click', function() {
   
