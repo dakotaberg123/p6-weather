@@ -4,11 +4,11 @@ $(document).foundation();
 $(document).ready(function(){
 
   // 1. Check for Geolocation
-  if (navigator.geolocation) {
-    $('.getGeolocation').show(); 
-  } else {
-    $('.getGeolocation').hide();
-  }
+  // if (navigator.geolocation) {
+  //   $('.getGeolocation').show(); 
+  // } else {
+  //   $('.getGeolocation').hide();
+  // }
 
   // 2. Get Geolocation & return Simple Weather
   $('.getGeolocation').on('click', function() {
@@ -70,14 +70,21 @@ $('.getWeather').on('click', function() {
   
     success: function(weather) {
       
-      // Get & store temperature
-      var temp = weather.temp;
-      // Get & store city
-      var city = weather.city;
+      var code = '<img src=' + weather.image + '>';
+      var temp = weather.temp + '&deg;' + weather.units.temp;
+      var city = weather.city + ', ' + weather.region;
+      var sunrise = 'Sunrise ' + weather.sunrise;
+      var high = 'High ' + weather.high;
+      var low = 'Low ' + weather.low;
+      var sunset = 'Sunset ' + weather.sunset;
       
-      // Output to hooks in HTML
-      $('.temp').text(temp);
+      $('.code').html(code);
+      $('.temp').html(temp);
       $('.city').text(city);
+      $('.sunrise').text(sunrise);
+      $('.high').text(high);
+      $('.low').text(low);
+      $('.sunset').text(sunset);
 
       // See console for all properties of object
       console.log(weather);
