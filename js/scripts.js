@@ -9,6 +9,9 @@ $(document).ready(function(){
   // } else {
   //   $('.getGeolocation').hide();
   // }
+ });
+
+
 
   // 2. Get Geolocation & return Simple Weather
   $('.getGeolocation').on('click', function() {
@@ -53,7 +56,7 @@ $(document).ready(function(){
     }
 
   });
- });
+
     // REF: http://foundation.zurb.com/docs/
 // REF: http://simpleweatherjs.com/
 
