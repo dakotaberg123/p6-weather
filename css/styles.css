@@ -100,7 +100,7 @@ ul {
 	padding: 0 0 0 60px;
 }
 
-input {
+#getWeather {
 	background: darkgrey;
 	color: rgba(7, 205, 250, 1);
 }
