@@ -73,6 +73,7 @@ li {
 .sunset {
 	font-size: 15px;
 	height: 100px;
+	line-height: 40px;
 }
 
 .sunrise,
@@ -170,6 +171,7 @@ i {
 
 .smallicon {
 	font-size: 60px;
+	margin-top: 20px;
 }
 
 h2 {
