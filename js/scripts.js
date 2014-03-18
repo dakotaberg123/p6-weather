@@ -20,7 +20,7 @@ $(document).ready(function(){
     console.log(position.coords.latitude+','+position.coords.longitude);
   });
   
-  });
+ 
 
   // 3. Wrap SimpleWeather in a function called _loadWeather()
   var loadWeather = function(location) {
@@ -53,7 +53,7 @@ $(document).ready(function(){
     }
 
   });
-
+ });
     // REF: http://foundation.zurb.com/docs/
 // REF: http://simpleweatherjs.com/
 
