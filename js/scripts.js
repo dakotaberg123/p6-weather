@@ -11,9 +11,7 @@ $(document).foundation();
   
     success: function(weather) {
       
-      //var code = '<img src=' + weather.image + '>';
-      var code = '<h2><i class="icon-' + weather.code + '"></i></h2>';
-      var temp = weather.temp + '&deg;' + weather.units.temp;
+      var temp = '<h2><i class="icon-' + weather.code + '"></i></h2>' + weather.temp + '&deg;' + weather.units.temp;
       var city = weather.city + ', ' + weather.region;
       var sunrise = '<i class="icon-36 smallicon"></i>' + '<br>' + weather.sunrise;
       var high = '<span class="icontext">&#x2191;</span>' + ' ' + weather.high + '&deg;' + weather.units.temp;
@@ -21,7 +19,6 @@ $(document).foundation();
       var sunset = '<i class="icon-31 smallicon"></i>' + '<br>' + weather.sunset;
       var currently = weather.currently;
       
-      $('.code').html(code);
       $('.temp').html(temp);
       $('.city').text(city);
       $('.sunrise').html(sunrise);
