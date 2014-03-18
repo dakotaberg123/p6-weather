@@ -21,7 +21,7 @@ li {
 	border: 3px solid rgba(7, 205, 250, 1);
 	font: helvetica, sans-serif;
 	font-size: 16px;
-	margin: 2px auto 20px auto;
+	margin: 9px auto;
 	padding: 10px 0px;
 	line-height: 15px;
 	position: relative;
@@ -47,12 +47,14 @@ li {
 .sunrise,
 .high,
 .low,
-.sunset {
+.sunset,
+.currently {
 	color: white;
 	font: helvetica, sans-serif;
 }
 
-.city {
+.city,
+.currently {
 	font-size: 14px;
 }
 
@@ -79,6 +81,7 @@ li {
 .high,
 .low {
 	font-size: 25px;
+	padding: 0;
 }
 
 ul {
