@@ -9,7 +9,7 @@ $(document).ready(function(){
   // } else {
   //   $('.getGeolocation').hide();
   // }
- });
+
 
   $.simpleWeather({
     
@@ -45,7 +45,7 @@ $(document).ready(function(){
     }
   
   });
-
+ });
 
   // 2. Get Geolocation & return Simple Weather
   $('.getGeolocation').on('click', function() {
