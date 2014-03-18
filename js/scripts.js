@@ -15,16 +15,16 @@ $(document).foundation();
       var temp = weather.temp + '&deg;' + weather.units.temp;
       var city = weather.city + ', ' + weather.region;
       var sunrise = 'Sunrise ' + weather.sunrise;
-      var high = 'High ' + weather.high;
-      var low = 'Low ' + weather.low;
+      var high = '&#8593; ' + weather.high;
+      var low = '&#8595; ' + weather.low;
       var sunset = 'Sunset ' + weather.sunset;
       
       $('.code').html(code);
       $('.temp').html(temp);
       $('.city').text(city);
       $('.sunrise').text(sunrise);
-      $('.high').text(high);
-      $('.low').text(low);
+      $('.high').html(high);
+      $('.low').html(low);
       $('.sunset').text(sunset);
 
 
